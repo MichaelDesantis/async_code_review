@@ -1,6 +1,24 @@
-## Asynchronous Code Review
+## Asynchronous Code Review Lesson Plan
 
-### What is sync and async, how does the event loop work
+### Introduction:
+
+This document serves as a quick reference of resources and code examples for an online review session I'm hosting on 10/30/2017 covering the use of Asynchronous Javascript. Also provides a template lesson plan in case any future intrsuctors wish to re-use this material.
+
+Topics below should be followed in order.
+
+### 01. What is sync and async? How does the event loop work?
+
+* Ask students, "What is synchronous? What is asynchronous? What is the difference, and how do we tell them apart?" Wait a minute or two and have them share their responses.
+
+* "Alright then, how does the event loop work? And how does this effect our code?" Give students another minute or two. Expect that very few students will have an answer for this one.
+
+* Show students the diagram located here = https://stackoverflow.com/questions/31582672/what-is-the-different-between-javascript-event-loop-and-node-js-event-loop?noredirect=1&lq=1
+
+* And if they haven't seen Phil Roberts Explanation yet, send them this video = https://www.youtube.com/watch?v=8aGhZQkoFbQ  
+
+* Let's talk about the callstack and event queue! Open 01_callstack.js
+
+* You should know, the event loop in Node.js has a few minor differences than the event loop in Google Chrome. Node.js also has a slightly larger API for handling and dealing with event timing. (We'll dive into this a little later)
 
 ### Functions as arguments
 
@@ -69,4 +87,8 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 * http://callbackhell.com/
 
-* https://www.youtube.com/watch?v=8aGhZQkoFbQ
+* https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c
+
+* http://nodesource.com/blog/understanding-the-nodejs-event-loop/
+
+* https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
