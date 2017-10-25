@@ -101,7 +101,16 @@ console.log("before");
 omg();
 console.log("after");
 
+//How does the event loop fit into all of this? The event loop is the piece responsible for adding and removing commands to and from the stack and the queue. It's named the "event loop" because at it's core, it's a 'while' loop written in C.
 
-
+//Here is a grotesquely over-simplified example missing a lot of pieces =  
+while(queueOrCallStackHasCommands){
+  if(callStackIsEmpty){
+    //remove command from queue
+    //push removed command into call stack
+  }else{
+    //run from call stack
+  }  
+}
 
 

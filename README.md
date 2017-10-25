@@ -10,23 +10,40 @@ Topics below should be followed in order.
 
 * Ask students, "What is synchronous? What is asynchronous? What is the difference, and how do we tell them apart?" Wait a minute or two and have them share their responses.
 
+* NodeJS allows both synchronous and asynchronous programming. As a rule of thumb, asynchronous functions return callbacks while synchronous ones return values.
+
+* Give students this article to review later = http://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
+
 * "Alright then, how does the event loop work? And how does this effect our code?" Give students another minute or two. Expect that very few students will have an answer for this one.
 
 * Show students the diagram located here = https://stackoverflow.com/questions/31582672/what-is-the-different-between-javascript-event-loop-and-node-js-event-loop?noredirect=1&lq=1
 
 * And if they haven't seen Phil Roberts Explanation yet, send them this video = https://www.youtube.com/watch?v=8aGhZQkoFbQ  
 
-* Let's talk about the callstack and event queue! Open 01_callstack.js
+* Let's talk about the callstack and event queue! Open 01_callstack.js Walk the students through!
 
 * You should know, the event loop in Node.js has a few minor differences than the event loop in Google Chrome. Node.js also has a slightly larger API for handling and dealing with event timing. (We'll dive into this a little later)
 
-### Functions as arguments
+### 02. Functions as arguments.
 
-### Nested callbacks, callback hell.
+* Functions and function calls in JavaScript are interesting and very different than many other programming languages. In JavaScript, functions are considered 'first class citizens' which allows functions to be fed as arguments to other functions.
 
-### Node.js Standard, Error First Callbacks
+* Open 02_functionArgs.js and walk the students through it.
+
+* Give students this article = https://medium.freecodecamp.org/javascript-callbacks-explained-using-minions-da272f4d9bcd
+
+* Also this article = http://callbackhell.com/
+
+### 03. The Node.js Standard, Error First Callbacks.
+
+* 
+
+* 
+
+* 
 
 ### Sync vs Async, make the return consistent. (process.nextTick(), setTimeout(,0))
+
 
 ### Promises, basic concept and implementation comparison.
 
@@ -41,8 +58,6 @@ Topics below should be followed in order.
 
 
 ### Core topics to hit:
-
-* NodeJS allows both synchronous and asynchronous programming. Asynchronous functions return callbacks while synchronous ones return values.
 
 * Callbacks, Promises, and Async/Await are all valid ways to handle async code. Callbacks (especially error-first) are Node.js convention. Promises and Async/Await are recent developments to the scene.
 
@@ -71,7 +86,7 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 * https://certsimple.com/blog/debugging-and-troubleshooting-javascript-async-await
 
-* http://www.projectforrest.com/path/88
+* More promises http://www.projectforrest.com/path/88
 
 * https://github.com/DrkSephy/es6-cheatsheet
 
@@ -81,9 +96,9 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 * https://jsonplaceholder.typicode.com/
 
-* http://www.discovermeteor.com/blog/understanding-sync-async-javascript-node/
 
-* https://medium.freecodecamp.org/javascript-callbacks-explained-using-minions-da272f4d9bcd
+
+
 
 * http://callbackhell.com/
 
