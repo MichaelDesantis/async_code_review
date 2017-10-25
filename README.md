@@ -1,5 +1,27 @@
 ## Asynchronous Code Review
 
+### What is sync and async, how does the event loop work
+
+### Functions as arguments
+
+### Nested callbacks, callback hell.
+
+### Node.js Standard, Error First Callbacks
+
+### Sync vs Async, make the return consistent. (process.nextTick(), setTimeout(,0))
+
+### Promises, basic concept and implementation comparison.
+
+### Promise example and promise API in depth.
+
+### Functions that allow both callbacks and promises
+
+### util.promisify
+
+### Async/await
+
+
+
 ### Core topics to hit:
 
 * NodeJS allows both synchronous and asynchronous programming. Asynchronous functions return callbacks while synchronous ones return values.
@@ -27,6 +49,10 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 * Roll your own Promisify Function = https://www.reddit.com/r/javascript/comments/76h0t1/node8s_utilpromisify_is_so_freakin_awesome/
 
+* https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
+
+* https://certsimple.com/blog/debugging-and-troubleshooting-javascript-async-await
+
 * http://www.projectforrest.com/path/88
 
 * https://github.com/DrkSephy/es6-cheatsheet
@@ -42,3 +68,5 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 * https://medium.freecodecamp.org/javascript-callbacks-explained-using-minions-da272f4d9bcd
 
 * http://callbackhell.com/
+
+* https://www.youtube.com/watch?v=8aGhZQkoFbQ
