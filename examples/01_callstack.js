@@ -28,7 +28,7 @@ a();
 
 //The call stack dictates the order of operations to be run. A stack is a common data structure that, much like a stack of plates, the top item or task is removed first. Last in, first out! The bottom task must have all above tasks finish running before it can run.
 
-//Now, let's go over the event queue.
+//Now, let's go over the callback queue.
 
 let dd = ()=>{
   throw new Error("SURPRISE!!");
@@ -57,9 +57,9 @@ aa();
 
 //Step 1 = the "I happen first" runs. It's a direct call to a synchronous function. No surprise here.
 
-//Step 2 = set a timeout for 2000 milliseconds. It removes this function from the call stack and places it into the 'event queue'. The event queue is where events scheduled to run at a later date are placed. This delegation of responsibility from the call stack to the event queue allows your JavaScript to continue to run. Remember! JavaScript is single threaded! If it didn't delegate the function away, it would be forced to sit and wait until the function returned a value or finished running to resume executing the rest of our code. (which in our case is a minimum of a full 2 seconds!)
+//Step 2 = set a timeout for 2000 milliseconds. It removes this function from the call stack and places it into the 'callback queue'. The callback queue is where events or functions scheduled to run at a later date are placed. This delegation of responsibility from the call stack to the callback queue allows your JavaScript to continue to run. Remember! JavaScript is single threaded! If it didn't delegate the function away, it would be forced to sit and wait until the function returned a value or finished running to resume executing the rest of our code. (which in our case is a minimum of a full 2 seconds!)
 
-//Step 3 = set a timeout for 0 milliseconds. But this doesn't run immediately! It gets added to the event queue scheduling it for later, allowing us to continue our program forward. The Event queue ONLY BEGINS TO RUN SCHEDULED FUNCTIONS WHEN THE CALL STACK IS CLEAR!
+//Step 3 = set a timeout for 0 milliseconds. But this doesn't run immediately! It gets added to the callback queue scheduling it for later, allowing us to continue our program forward. The callback queue ONLY BEGINS TO RUN SCHEDULED FUNCTIONS WHEN THE CALL STACK IS CLEAR!
 
 //Step 4 = set a timeout for 500 milliseconds.
 
@@ -101,7 +101,7 @@ console.log("before");
 omg();
 console.log("after");
 
-//How does the event loop fit into all of this? The event loop is the piece responsible for adding and removing commands to and from the stack and the queue. It's named the "event loop" because at it's core, it's a 'while' loop written in C.
+//How does the event loop fit into all of this? The event loop is the piece responsible for adding and removing commands to and from the callstack and the callback queue. It's named the "event loop" in part because at it's core, it's a 'while' loop written in C.
 
 //Here is a grotesquely over-simplified example missing a lot of pieces =  
 while(queueOrCallStackHasCommands){

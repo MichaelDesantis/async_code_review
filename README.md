@@ -20,9 +20,11 @@ Topics below should be followed in order.
 
 * And if they haven't seen Phil Roberts Explanation yet, send them this video = https://www.youtube.com/watch?v=8aGhZQkoFbQ  
 
-* Let's talk about the callstack and event queue! Open 01_callstack.js Walk the students through!
+* Let's talk about the callstack and callback queue! Open 01_callstack.js Walk the students through!
 
-* You should know, the event loop in Node.js has a few minor differences than the event loop in Google Chrome. Node.js also has a slightly larger API for handling and dealing with event timing. (We'll dive into this a little later)
+* Callback queue =/= event loop! You should also know, the event loop in Node.js has a few minor differences than the event loop in Google Chrome. Node.js also has a slightly larger API for handling and dealing with event timing. (We'll dive into this a little later)
+
+* The event loop is capable of so much more too, here is more reading on 'event driven' programming for later = http://nodesource.com/blog/understanding-the-nodejs-event-loop/ also https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d
 
 ### 02. Functions as arguments.
 
@@ -36,14 +38,13 @@ Topics below should be followed in order.
 
 ### 03. The Node.js Standard, Error First Callbacks.
 
-* 
+* In Node.js, it is considered standard practice to handle errors in asynchronous functions by returning them as the first argument to the current function's callback. If there is an error, the first parameter is passed an Error object with all the details. Otherwise, you can null the first parameter.
 
-* 
+* These conventions allow you to structure your callbacks in a consistent manner. Here is some more reading for those interested = http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/
 
-* 
+* Open and demo 03_errorFirst.js. Have the students explain each line of code.
 
 ### Sync vs Async, make the return consistent. (process.nextTick(), setTimeout(,0))
-
 
 ### Promises, basic concept and implementation comparison.
 
