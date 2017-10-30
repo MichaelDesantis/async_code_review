@@ -101,29 +101,37 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 * Open 08_advancedPromise.js (located in the 07_promises directory)
 
+### 09. Compatibility and incremental improvement on existing codebases. 
+
+* On occasion, it becomes necessary to modernize an existing code base. Updating existing code while allowing it to remain compatible with existing (old) implementations can be challenging, but necessary.
+
+* Refactoring code like this will truly help you to appreciate how well-built test suites can be a lifesaver. How would you go about building code that'll work with both error-first callbacks AND promises?
+
 ### Functions that allow both callbacks and promises
 
 * When creating Async API’s in Node, many developers will assume you’re using the node.js standard, which is a callback based system. Now we have promises. But for the sake of compatibility, you can return both the promise resolve/reject AND the callback call to allow your program to work with either system. Just remember to provide a default value in case no callback is provided. Example at = https://github.com/jscomplete/advanced-nodejs/blob/master/3.1/async-promise.js
 
 ### util.promisify
 
+* https://hackernoon.com/node8s-util-promisify-is-so-freakin-awesome-1d90c184bf44
+
+* Roll your own Promisify Function = https://www.reddit.com/r/javascript/comments/76h0t1/node8s_utilpromisify_is_so_freakin_awesome/
+
 ### Async/await
-
-
-### Core topics to hit:
-
-
-### Additional Resources
 
 * https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8#.2u43pq1ql
 
 * https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9
 
-* https://hackernoon.com/node8s-util-promisify-is-so-freakin-awesome-1d90c184bf44
-
-* Roll your own Promisify Function = https://www.reddit.com/r/javascript/comments/76h0t1/node8s_utilpromisify_is_so_freakin_awesome/
+* https://certsimple.com/blog/debugging-and-troubleshooting-javascript-async-await
 
 * https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
 
-* https://certsimple.com/blog/debugging-and-troubleshooting-javascript-async-await
+
+
+
+
+
+
+
 
