@@ -127,6 +127,10 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 ### 11. The long awaited Async/Await!
 
+* Async/Await is part of the ES7 Spec. And is supported in most modern browsers currently. On the server, it is available as of Node.js version 7.10.0 (or 7.6 if using the --harmony flag)
+
+* Async/Await functions similarly to Promises + Generators. It's a good idea to familiarize yourself well with promised first before diving into Async/Await. Here are some links for later study 
+
 * https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8#.2u43pq1ql
 
 * https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9
@@ -135,5 +139,5 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 * https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
 
-
+* Open 11_asyncAwait.js and discuss with students.
 
