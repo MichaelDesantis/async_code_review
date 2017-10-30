@@ -107,17 +107,25 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 
 * Refactoring code like this will truly help you to appreciate how well-built test suites can be a lifesaver. How would you go about building code that'll work with both error-first callbacks AND promises?
 
-### Functions that allow both callbacks and promises
+* Good news! We CAN create functions that allow both callbacks and promises!
 
-* When creating Async API’s in Node, many developers will assume you’re using the node.js standard, which is a callback based system. Now we have promises. But for the sake of compatibility, you can return both the promise resolve/reject AND the callback call to allow your program to work with either system. Just remember to provide a default value in case no callback is provided. Example at = https://github.com/jscomplete/advanced-nodejs/blob/master/3.1/async-promise.js
+#### Option 1 = Write a function compatible with both APIs.
 
-### util.promisify
+* When creating Async API’s in Node, many developers will assume you’re using the node.js standard, which is a callback based system. Now we have promises. But for the sake of compatibility, you can return both the promise resolve/reject AND the callback call to allow your program to work with either system. Just remember to provide a default value in case no callback is provided. 
 
-* https://hackernoon.com/node8s-util-promisify-is-so-freakin-awesome-1d90c184bf44
+* Open 09_allowBoth.js and walk through the code. But let the students try to figure out their own solutions first if time allows it.
 
-* Roll your own Promisify Function = https://www.reddit.com/r/javascript/comments/76h0t1/node8s_utilpromisify_is_so_freakin_awesome/
+#### Option 2 = Promisify your calls!
 
-### Async/await
+* To 'promisify' something is to convert it to return a promise. No surprise there.
+
+* Here is some reading for you =  https://hackernoon.com/node8s-util-promisify-is-so-freakin-awesome-1d90c184bf44
+
+* And if you want to roll your own Promisify Function = https://www.reddit.com/r/javascript/comments/76h0t1/node8s_utilpromisify_is_so_freakin_awesome/
+
+* Open 10_promisify.js and explain.
+
+### 11. The long awaited Async/Await!
 
 * https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8#.2u43pq1ql
 
@@ -126,12 +134,6 @@ https://nodejs.org/dist/latest/docs/api/errors.html#errors_node_js_error_codes
 * https://certsimple.com/blog/debugging-and-troubleshooting-javascript-async-await
 
 * https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
-
-
-
-
-
-
 
 
 
