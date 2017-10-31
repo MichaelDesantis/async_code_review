@@ -8,7 +8,7 @@ const anotherPromise = (message,timer)=>{
     };
 
     setTimeout(()=>{
-      //Resolved values will be caps, so we can see the difference between a resolve and a direct cann from this function itself.
+      //Resolved values will be caps, so we can see the difference between a resolve and a direct call from this function itself.
       resolve(message.toUpperCase());
       console.log(message);
     },timer)
